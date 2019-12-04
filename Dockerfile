@@ -1,4 +1,4 @@
-FROM docker.elastic.co/logstash/logstash-oss:6.7.1
+FROM docker.elastic.co/logstash/logstash-oss:7.4.2
 
 RUN LS_JAVA_OPTS="-Xms32m -Xmx400m" logstash-plugin install logstash-input-heartbeat
 RUN LS_JAVA_OPTS="-Xms32m -Xmx400m" logstash-plugin install logstash-input-beats
